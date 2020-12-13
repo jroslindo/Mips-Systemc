@@ -12,8 +12,8 @@ add_executable(
   main.cpp
   test_or_1bit.cpp
   test_or_1bit.h
-  Controle/controle.cpp
-  Controle/controle.h
+  MUX_32/mux_32.cpp
+  MUX_32/mux_32.h
 )
 
 target_link_libraries(

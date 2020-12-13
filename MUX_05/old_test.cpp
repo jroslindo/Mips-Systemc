@@ -7,14 +7,14 @@ void test_or_1bit::do_test()
     while (true)
     {
         ti_Sel.write(false);
-        ti_Data0.write("00000000000000000000000000000000");
-        ti_Data1.write("10001000100010001000100010001000");
+        ti_Data0.write("00000");
+        ti_Data1.write("01001");
         print();
         wait(1);
 
         ti_Sel.write(true);
-        ti_Data0.write("00000000000000000000000000000000");
-        ti_Data1.write("10001000100010001000100010001000");
+        ti_Data0.write("00000");
+        ti_Data1.write("01001");
         print();
         wait(1);
     }

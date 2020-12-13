@@ -12,8 +12,8 @@ add_executable(
   main.cpp
   test_or_1bit.cpp
   test_or_1bit.h
-  MUX_32/mux_32.cpp
-  MUX_32/mux_32.h
+  SIGN_EXTEND/sign_extend.cpp
+  SIGN_EXTEND/sign_extend.h
 )
 
 target_link_libraries(

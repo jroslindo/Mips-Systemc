@@ -1,0 +1,10 @@
+﻿  main.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  pc.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  test_pc.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  Gerando Código...
+LINK : warning LNK4044: opção não reconhecida '/vmg'; ignorada
+LINK : warning LNK4044: opção não reconhecida '/vmg'; ignorada
+  PC_32_bits.vcxproj -> C:\Users\gusta\source\repos\MIPS\PC_32_bits\Debug\PC_32_bits.exe

@@ -1,7 +1,0 @@
-﻿  main.cpp
-C:\Users\gusta\source\repos\MIPS\ULA_32_bits\ULA_32_bits\main.cpp(1,10): fatal error C1083: Não é possível abrir arquivo incluir: 'systemc.h': No such file or directory
-  test_ula.cpp
-C:\Users\gusta\source\repos\MIPS\ULA_32_bits\ULA_32_bits\test_ula.h(2,10): fatal error C1083: Não é possível abrir arquivo incluir: 'systemc.h': No such file or directory
-  ula.cpp
-C:\Users\gusta\source\repos\MIPS\ULA_32_bits\ULA_32_bits\ula.h(2,10): fatal error C1083: Não é possível abrir arquivo incluir: 'systemc.h': No such file or directory
-  Gerando Código...

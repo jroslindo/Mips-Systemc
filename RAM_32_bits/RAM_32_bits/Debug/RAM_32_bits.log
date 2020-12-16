@@ -1,6 +1,0 @@
-﻿  memoria_ram.cpp
-  Unknown compiler version - please run the configure tests and report the results
-C:\Users\gusta\source\repos\MIPS\RAM_32_bits\RAM_32_bits\memoria_ram.cpp(12,20): warning C4244: 'argumento': conversão de 'sc_dt::uint_type' para 'int', possível perda de dados
-C:\Users\gusta\source\repos\MIPS\RAM_32_bits\RAM_32_bits\memoria_ram.cpp(17,7): warning C4244: 'argumento': conversão de 'sc_dt::uint_type' para 'int', possível perda de dados
-LINK : warning LNK4044: opção não reconhecida '/vmg'; ignorada
-  RAM_32_bits.vcxproj -> C:\Users\gusta\source\repos\MIPS\RAM_32_bits\Debug\RAM_32_bits.exe

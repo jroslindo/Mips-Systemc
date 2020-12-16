@@ -1,28 +1,28 @@
 #include "systemc.h"
-#include "SIGN_EXTEND/sign_extend.h"
-#include "test_or_1bit.h"
+#include "CLOCK_DIV/clock_div.h"
+// #include "test_memoria_ram.h"
 
-int sc_main(int argc, char *argv[])
-{
-    sc_signal<sc_bv<16>> mi_Data0;
-    sc_signal<sc_bv<32>> mo_Data;
+int sc_main(int argc, char* argv[]) {
 
-    sc_clock CLK("clock", 50, SC_NS);
+    sc_signal<bool> m_clock_out;
 
-    sign_extend SIGN_EXTEND("SIGN_EXTEND");
-    SIGN_EXTEND(mi_Data0, mo_Data);
 
-    test_or_1bit TESTOR1BIT("TESTOR1BIT");
-    TESTOR1BIT(CLK, mi_Data0, mo_Data);
+    sc_clock CLK("i_CLK", 50, SC_NS);
 
-    sc_trace_file *tf = sc_create_vcd_trace_file("wave");
+    clock_div CLOCK_DIV("CLOCK_DIV");
+    CLOCK_DIV(CLK, m_clock_out);
+
+    // test_memoria_ram TEST_MEMORIA_RAM("TEST_MEMORIA_RAM");
+    // TEST_MEMORIA_RAM(CLK, m_clock_out);
+
+    sc_trace_file* tf = sc_create_vcd_trace_file("wave_memoria_ram");
     sc_trace(tf, CLK, "clock");
-    sc_trace(tf, mi_Data0, "mi_Data0");
-    sc_trace(tf, mo_Data, "mo_Data");
+    sc_trace(tf, m_clock_out, "m_clock_out");
 
 
-    sc_start(150, SC_NS);
+    sc_start(500, SC_NS);
     sc_close_vcd_trace_file(tf);
 
-    return (0);
+    return(0);
+
 }

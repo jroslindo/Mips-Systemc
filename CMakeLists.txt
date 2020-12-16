@@ -10,10 +10,10 @@ find_package(SystemCLanguage CONFIG REQUIRED)
 add_executable(
   ${PROJECT_NAME}
   main.cpp
-  test_or_1bit.cpp
-  test_or_1bit.h
-  SIGN_EXTEND/sign_extend.cpp
-  SIGN_EXTEND/sign_extend.h
+  test_memoria_ram.cpp
+  test_memoria_ram.h
+  CLOCK_DIV/clock_div.h
+  CLOCK_DIV/clock_div.cpp
 )
 
 target_link_libraries(
